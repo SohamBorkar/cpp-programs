@@ -1,1 +1,1 @@
-this is rough file to add in in gitignor.
+// this is rough file to add in in gitignor.
