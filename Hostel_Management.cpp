@@ -262,6 +262,7 @@ public:
         cout << "Thank You !" << endl;
     };
 };
+
 int main()
 {
     Hostel gpa;

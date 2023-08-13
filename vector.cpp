@@ -39,7 +39,7 @@ int main(){
     
     aarr[0][0] += 10;   // incrementing by 10
 
-    // printing 2d vector using for each loop
+    cout << endl << "printing 2d vector using for each loop" << endl;
     for (int i = 0; i < aarr.size(); i++)
     {
         for (int number:aarr[i])
