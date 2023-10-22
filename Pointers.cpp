@@ -9,7 +9,7 @@ int main(){
 
     // & ---> (Address of) Operator
     cout<<"The address of a is "<<&a<<endl;
-    cout<<"The address of a is "<<b<<endl;
+    cout<<"The address of b is "<<b<<endl;
 
     // * ---> (value at) Dereference operator
     cout<<"The value at address b is "<<*b<<endl;
