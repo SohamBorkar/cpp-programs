@@ -1,69 +1,43 @@
+// To Debug;
 #include <iostream>
+#include <string>
+#include <algorithm>
 
 using namespace std;
 
-void printArray(int *arr, int size){
-    for (int i = 0; i < size; i++)
-        cout << arr[i] << " ";
-    cout << endl;
-};
-
-void choosecond(int i, int * arr, int size, int pivot, int second){
-    while (arr[i] < size)
-    {
-        if (arr[i] > pivot)
-        {
-            second = arr[i];
-            break;
-        }
-    }
-};
-
-void mergesort(int *arr, int first, int size){
-    int pivot = arr[size];
-    int second;
-    int temp;
-    //cout << pivot;
+string reverseString(string &str){
     
-    // while (second < size)
-    // {
-    //     if (arr[second] > pivot)
-    //     {
-    //         second = arr[second];
-    //         break;
-    //     }
-    //     second++;
-    // }
+	// I     a m     a   S t a r
+    // 11 10 9 8 7 6 5 4 3 2 1 0
+	
+	string temp, toadd;
+	int count = 0;
 
-    // 8, 7, 6, 1, 0, 9, 2
+	for(int i = str.length() - 1; i > 0; i--){
+		// count = 0;
+		if(str[i] == ' '){
+			count++;
+			if(count >= 2){
+				// count = 0;
+				continue;
+				// count = 0;
+			}
+			reverse(temp.begin(), temp.end());
+			toadd += temp;
+			toadd += " ";
+			temp = " ";
+			// count = 0;
+		}
+		else{
+			temp += str[i];		// temp = Star toadd = Star 
+		}
+		// count = 0;
+	}		
+	return toadd;
+}
 
-    for (int i = 0; i <= size; i++)
-    {
-        // if(arr[i] > pivot){
-        //     second = arr[i];
-        //     continue;
-        // }
-
-        choosecond(i, arr, size, pivot, second);
-
-        if(arr[i] < pivot)
-        {
-            temp = arr[i];
-            arr[i] = second;
-            second = temp;
-        }
-    }
-    
-};
-
-int main(){
-    int arr[] = {8,7,6,1,0,9,2};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    //cout << size << endl;
-    printArray(arr, size);
-
-    mergesort(arr, 0, size - 1);
-
-    printArray(arr, size);
+int main() {
+    string s = "I am  a Star";
+    cout << reverseString(s);
     return 0;
 }

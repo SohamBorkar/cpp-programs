@@ -60,6 +60,6 @@ int main(){
 // sort(arr.begin(), arr.end())
 
 
-/*Some problems may require the use of a sorting algorithm, and I hope you are already familiar with basic sorting algorithms like Bubble Sort, Selection Sort, Insertion Sort which have O(n^2) complexity. Better algorithms include Merge Sort, Quick Sort and Heap Sort which have O(nLogn) complexity.
+/*Some problems may require the use of a sorting algorithm, and I hope you are already familiar with basic sorting algorithms like  Sort, Selection Sort, Insertion Sort which have O(n^2) complexity. Better algorithms include Merge Sort, Quick Sort and Heap Sort which have O(nLogn) complexity.
 
 For most array problems we can use the inbuilt sort function which also offers O(nlogn) complexity. This is how you can use the inbuilt sort function in case you are not aware of. Also depending upon the data in the problem, you may also require Counting Sort, or Bucket Sort or Radix Sort sometimes.  We will discuss more problems in Sorting & Searching section.*/
